@@ -2,15 +2,54 @@
 <html>
 <head>
   <title>Login</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: linear-gradient(to right, #36d1dc, #5b86e5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #5b86e5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #36d1dc;
+    }
+  </style>
 </head>
+
 <body>
 
-<h2>Login</h2>
+<div class="box">
+  <h2>Login</h2>
 
-<input type="email" id="email" placeholder="Email"><br><br>
-<input type="password" id="password" placeholder="Password"><br><br>
+  <input type="email" id="email" placeholder="Email"><br>
+  <input type="password" id="password" placeholder="Password"><br>
 
-<button onclick="login()">Login</button>
+  <button onclick="login()">Login</button>
+</div>
 
 <script type="module" src="app.js"></script>
 
