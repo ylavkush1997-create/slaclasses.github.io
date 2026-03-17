@@ -2,20 +2,63 @@
 <html>
 <head>
   <title>Student Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #667eea;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #764ba2;
+    }
+  </style>
 </head>
+
 <body>
 
-<h2>Student Enquiry Form</h2>
+<div class="form-box">
+  <h2>Student Enquiry</h2>
 
-<input type="date" id="date"><br><br>
-<input type="text" id="name" placeholder="Name"><br><br>
-<input type="number" id="age" placeholder="Age"><br><br>
-<input type="text" id="gender" placeholder="Gender"><br><br>
-<input type="text" id="class" placeholder="Class"><br><br>
-<input type="text" id="address" placeholder="Address"><br><br>
-<input type="text" id="mobile" placeholder="Mobile"><br><br>
+  <input type="date" id="date">
+  <input type="text" id="name" placeholder="Name">
+  <input type="number" id="age" placeholder="Age">
+  <input type="text" id="gender" placeholder="Gender">
+  <input type="text" id="class" placeholder="Class">
+  <input type="text" id="address" placeholder="Address">
+  <input type="text" id="mobile" placeholder="Mobile">
 
-<button onclick="saveData()">Submit</button>
+  <button onclick="saveData()">Submit</button>
+</div>
 
 <script type="module" src="app.js"></script>
 
