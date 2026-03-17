@@ -3,11 +3,14 @@ import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/fir
 import { getFirestore, addDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_KEY",
-  authDomain: "YOUR_DOMAIN",
-  projectId: "YOUR_ID"
+  apiKey: "AIzaSyDQWaY3DYECRibNXJtqiEGLNv9CBoD4Vhw",
+  authDomain: "sla-classes.firebaseapp.com",
+  projectId: "sla-classes",
+  storageBucket: "sla-classes.firebasestorage.app",
+  messagingSenderId: "975905298835",
+  appId: "1:975905298835:web:3dad072a19a3d4fb57f066",
+  measurementId: "G-VW874DJPKE"
 };
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore();
